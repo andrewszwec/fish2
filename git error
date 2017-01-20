@@ -1,0 +1,7 @@
+remote: error: Trace: 4f5c460bc6a0c03bfe77b3283cd33b3c
+remote: error: See http://git.io/iEPt8g for more information.
+remote: error: File two-part-model/raw_images is 292.43 MB; this exceeds GitHub's file size limit of 100.00 MB
+To https://github.com/kilaorange/fish.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/kilaorange/fish.git'
+

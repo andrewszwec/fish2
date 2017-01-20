@@ -1,0 +1,3 @@
+306636887 two-part-model/raw_images
+25860184 cnn-model-001/fish-classifier.tfl.data-00000-of-00001
+2496840 two-part-model/first_try.h5
