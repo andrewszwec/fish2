@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: latin-1 -*-
 from keras.models import Sequential
 from keras.layers.core import Flatten, Dense, Dropout
 from keras.layers.convolutional import Convolution2D, MaxPooling2D, ZeroPadding2D
@@ -51,11 +53,11 @@ def VGG_16(weights_path=None):
 
     if weights_path:
         model.load_weights(weights_path)
-    
+       
     return model
 
 #if __name__ == "__main__":
-im = cv2.resize(cv2.imread('/home/andrew/Documents/kaggle/fish2/demo_image.JPG'), (224, 224)).astype(np.float32)
+im = cv2.resize(cv2.imread('/Users/andrew/Documents/kaggle/fish2/demo_image.JPG'), (224, 224)).astype(np.float32)
 im[:,:,0] -= 103.939
 im[:,:,1] -= 116.779
 im[:,:,2] -= 123.68
@@ -63,7 +65,7 @@ im = im.transpose((2,0,1))
 im = np.expand_dims(im, axis=0)
 
 # Test pretrained model
-model = VGG_16('/home/andrew/Documents/kaggle/fish2/vgg16_weights.h5')
+model = VGG_16('/Users/andrew/Documents/kaggle/fish2/vgg16_weights.h5')
 sgd = SGD(lr=0.1, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(optimizer=sgd, loss='categorical_crossentropy')
 out = model.predict(im)
@@ -71,4 +73,4 @@ print np.argmax(out)
 
 import os
 import h5py
-infile = h5py.File(os.path.join('/home/andrew/Documents/kaggle/fish2/vgg16_weights.h5'),"r")
+infile = h5py.File(os.path.join('/Users/andrew/Documents/kaggle/fish2/vgg16_weights.h5'),"r")

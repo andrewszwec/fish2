@@ -1,0 +1,33 @@
+SYMLINKS DIDNT WORK, THIS WORKED
+cp /usr/local/Cellar/opencv/2.4.12_2/lib/python2.7/site-packages/cv.py /Users/andrew/anaconda/lib/python2.7/site-packages/cv.py
+
+cp /usr/local/Cellar/opencv/2.4.12_2/lib/python2.7/site-packages/cv2.so /Users/andrew/anaconda/lib/python2.7/site-packages/cv2.so
+
+
+
+
+Run this to setup opencv symlinks
+cd /Users/andrew/anaconda/lib/python2.7/site-packages
+sudo ln -s /usr/local/Cellar/opencv/2.4.12_2/lib/python2.7/site-packages/cv.so cv.so
+sudo ln -s /usr/local/Cellar/opencv/2.4.12_2/lib/python2.7/site-packages/cv.py cv.py
+
+
+NOTES
+Default python package dir
+['/Users/andrew/anaconda/lib/python2.7/site-packages', '/Users/andrew/anaconda/lib/site-python']
+
+need to add the old site packages location here or link to it
+
+cd /Library/Python/2.7/site-packages/
+
+
+cat ~/.bash_profile | grep PYTHONPATH
+sudo ln -s /usr/local/Cellar/opencv/2.4.12_2/lib/python2.7/site-packages/cv.py cv.py
+sudo ln -s /usr/local/Cellar/opencv/2.4.12_2/lib/python2.7/site-packages/cv2.so cv2.so
+
+## TELL ANACONDA TO LOOK IN HOMEBREW DIR
+import sys; sys.path.insert(0, "/usr/local/Cellar/opencv/2.4.10/lib/python2.7/site-packages/")
+
+
+
+
