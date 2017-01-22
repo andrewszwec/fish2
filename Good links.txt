@@ -1,0 +1,13 @@
+Good links
+
+http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
+
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.8494&rep=rep1&type=pdf
+
+http://cs231n.github.io/convolutional-networks/
+
+https://scholar.google.com.au/scholar?q=convolutional+neural+network+architectures&hl=en&as_sdt=0&as_vis=1&oi=scholart&sa=X&ved=0ahUKEwiU-JWI783RAhUITLwKHcDGDFEQgQMIFzAA
+
+https://www.youtube.com/watch?v=LFDU2GX4AqM&utm_medium=email&utm_campaign=deep-learning-nd-foundation-welcome-email&utm_source=blueshift&utm_content=dlfnd_welcomeemail&bsft_eid=c285c6ce-5c92-4ae5-8ee3-2bc84ff369f6&bsft_clkid=32f3137c-b4ae-4d3b-8c4c-0e3627a94530&bsft_uid=2ad24b06-8e1f-4ee7-85d4-4400b7435534&bsft_mid=572a979a-f634-4be2-9e9f-757382c27c59&bsft_txnid=ae61a256-d505-43ca-a405-634ef30486b8
+
+https://blog.altoros.com/using-convolutional-neural-networks-and-tensorflow-for-image-classification-and-search.html
